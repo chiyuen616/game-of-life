@@ -279,8 +279,11 @@ function windowResized() {
 //can't run
 function keyPressed() {
   if (keyCode === UP_ARROW) {
+    console.log('hiii');
     cursorY -= unitLength;
   } else if (keyCode === DOWN_ARROW) {
+    console.log('bye');
+
     cursorY += unitLength;
   } else if (keyCode === LEFT_ARROW) {
     cursorX -= unitLength;
