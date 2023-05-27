@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="gameoflife.css" />
+</head>
+
+<body>
+    <div id='allcanvas'></div>
+    <div id='canvas'></div>
+
+    <div class="button">
+        <button id="start-stop-button">Start/Stop</button>
+        <button id="reset-button">Reset</button>
+        <button class="Next-move" id="Next-move" type="button">
+            Next move
+        </button>
+
+        <button class="random" id="random" type="button">
+            Random
+        </button>
+        <button class="pattern" id="pattern" type="button">
+            Random pattern
+        </button>
+
+
+    </div>
+
+
+    <div>
+
+        <label for="framerate">Framerate:</label>
+        <input type="range" id="framerate" min="1" max="100" value="50">
+        <span id="framerate-value">50</span>
+
+    </div>
+
+
+    <div class="colorpicker">
+        <label for="life-color">Select color:</label>
+        <input type="color" id="life-color" value="black">
+        <span id="color-value">black</span>
+    </div>
+    </div>
+    <p> You can change the rules by deciding the living cells:</p>
+    <div class="input-group">
+        <div class="boxes">
+          <label for="survivebox">Survive less than:</label>
+          <input type="number" id="survivebox" min="0" max="50" value="2">
+        </div>
+      
+        <div class="boxes">
+          <label for="overpopulationbox">Overpopulation:</label>
+          <input type="number" id="overpopulationbox" min="0" max="50" value="3">
+        </div>
+      
+        <div class="boxes">
+          <label for="Nothingchangesbox">Nothing changes:</label>
+          <input type="number" id="Nothingchangesbox" min="0" max="50" value="2">
+        </div>
+      
+        <div class="boxes">
+          <label for="Reproductionbox">Reproduction:</label>
+          <input type="number" id="Reproductionbox" min="0" max="50" value="3">
+        </div>
+      </div>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+        <script src="gameoflife.js"></script>
+</body>
+
+</html>
